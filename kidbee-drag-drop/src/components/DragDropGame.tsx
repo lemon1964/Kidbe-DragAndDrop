@@ -3,6 +3,7 @@
 import { DndContext, DragEndEvent, useDraggable, useDroppable } from "@dnd-kit/core";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useId } from 'react';
 import '../app/styles/globals.css';
 
 
@@ -90,10 +91,13 @@ type DroppableAreaProps = {
 const DroppableArea = ({ id, items }: DroppableAreaProps) => {
   const { setNodeRef } = useDroppable({ id });
 
+  const uniqueId = useId();
+
   return (
     <motion.div
       ref={setNodeRef}
       className="p-4 border border-gray-400 w-48"
+      aria-describedby={`DndDescribedBy-${uniqueId}`} // Уникальный идентификатор
       animate={{ backgroundColor: "#e8ffeb" }} // Цвет подтверждения
       transition={{ duration: 0.25, ease: "easeOut" }}
     >
@@ -121,6 +125,8 @@ const DraggableItem = ({ id, name, basket }: DraggableItemProps) => {
     data: { basket },
   });
 
+  const uniqueId = useId();
+
   const style = transform
     ? {
         transform: `translate(${transform.x}px, ${transform.y}px)`,
@@ -134,6 +140,7 @@ const DraggableItem = ({ id, name, basket }: DraggableItemProps) => {
       style={style}
       {...listeners}
       {...attributes}
+      aria-describedby={`DndDescribedBy-${uniqueId}`} // Уникальный идентификатор
       className={`p-2 bg-blue-600 rounded-md shadow cursor-pointer text-black dark:text-white`}
       whileHover={{ scale: 1.1 }} // Небольшое увеличение при наведении курсора
       transition={{ type: "spring", stiffness: 800, damping: 100 }}
