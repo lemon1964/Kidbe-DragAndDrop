@@ -1,11 +1,16 @@
 # Перетаскивание объектов Drag and Drop
 
-- `npx create-next-app@latest kidbee-movi-test --typescript --experimental-app`
-- `cd kidbee-movi-test`
+```sh
+npx create-next-app@latest kidbee-movi-test --typescript --experimental-app
+  ```
+```sh
+cd kidbee-movi-test
+  ```
 
-- `cd kidbee-movi-test`
+```sh
+npm install @reduxjs/toolkit react-redux tailwindcss postcss autoprefixer @dnd-kit/core axios
+  ```
 
-- `npm install @reduxjs/toolkit react-redux tailwindcss postcss autoprefixer @dnd-kit/core axios`
 
 - Обновляем зависимости как в основном Кидби.
 ```sh
@@ -16,9 +21,12 @@
   }
   ```
 
-- `npx tailwindcss init -p`
-- `tailwind.config.js`
-- `next.config.mjs`
+```sh
+npx tailwindcss init -p
+  ```
+
+- tailwind.config.js
+- next.config.mjs
 
 - Создаем Redux хранилище
 - /src/store/store.ts
@@ -32,13 +40,24 @@
 - /src/components/DragDropGame.tsx + 2 файла для разделения К и С компонент.
 
 - Устанавливаем анимацию
-- `npm i framer-motion`
+```sh
+npm i framer-motion
+  ```
+
 
 ------------------------------------------
 
 ### команды
+
+```sh
 cd kidbee-drag-drop
+  ```
+```sh
 npm run dev
+  ```
+
+==========================
+
  
 
 git add .
