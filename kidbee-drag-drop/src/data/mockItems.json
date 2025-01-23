@@ -1,0 +1,13 @@
+{
+    "baskets": [
+      { "id": "basket-1", "name": "Фрукты", "items": [] },
+      { "id": "basket-2", "name": "Овощи", "items": [] }
+    ],
+    "items": [
+      { "id": "item-1", "name": "Яблоко" },
+      { "id": "item-2", "name": "Морковь" },
+      { "id": "item-3", "name": "Банан" },
+      { "id": "item-4", "name": "Капуста" }
+    ]
+  }
+  
