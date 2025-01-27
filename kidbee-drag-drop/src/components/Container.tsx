@@ -42,15 +42,18 @@ const Container: React.FC<ContainerProps> = ({ id, condition, items, moveItemToC
       }`}
       style={{ backgroundColor }}
     >
-      <h2 className="text-xl font-bold text-white mb-4 p-2 rounded-lg bg-opacity-90" style={{ backgroundColor: "#00000090" }}>
+      <h2
+        className="text-xl md:text-lg sm:text-base font-bold text-white mb-4 p-2 rounded-lg bg-opacity-90 text-center"
+        style={{ backgroundColor: "#00000090" }}
+      >
         {name}
       </h2>
       <img
         src={image}
         alt={`Дом ${condition}`}
-        className="w-full h-40 object-cover rounded-md border-2 border-white"
+        className="w-full h-40 sm:h-32 object-cover rounded-md border-2 border-white"
       />
-      <div className="absolute bottom-4 left-4 flex gap-2">
+      <div className="absolute bottom-4 left-4 flex gap-2 sm:gap-1">
         {items.map(item => (
           <img
             key={item.id}
@@ -58,12 +61,13 @@ const Container: React.FC<ContainerProps> = ({ id, condition, items, moveItemToC
             alt={item.name}
             width="30"
             height="30"
-            className="w-8 h-8 rounded-full border-2 border-white"
+            className="w-8 h-8 sm:w-6 sm:h-6 rounded-full border-2 border-white"
           />
         ))}
       </div>
     </div>
   );
+  
 };
 
 export default Container;

@@ -50,10 +50,10 @@ const DragDrop: React.FC<TaskBoardProps> = ({ taskData }) => {
           На главную
         </Link>
       </div>
-      <h1 className="text-4xl font-bold text-center mb-8 text-white drop-shadow-[0_0_8px_rgba(0,0,255,0.8)]">
+      <h1 className="text-4xl md:text-3xl sm:text-2xl font-bold text-center mb-8 text-white drop-shadow-[0_0_8px_rgba(0,0,255,0.8)]">
         {taskData.task}
       </h1>
-      <div className="flex gap-8 justify-center mb-12">
+      <div className="flex flex-wrap gap-8 justify-center mb-12 px-4 sm:gap-4">
         {containers.map((container, index) => (
           <Container
             key={container.id}
@@ -66,6 +66,7 @@ const DragDrop: React.FC<TaskBoardProps> = ({ taskData }) => {
       <ItemList items={unassignedItems} />
     </div>
   );
+  
 };
 
 export default DragDrop;

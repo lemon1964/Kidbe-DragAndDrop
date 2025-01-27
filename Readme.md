@@ -91,7 +91,7 @@ import { useId } from "react";
 
 
 git add .
-git commit -m "animals and fruits"
+git commit -m "mobil"
 git branch -M main
 git push -u origin main
 
@@ -103,3 +103,4 @@ git remote -v
   ```
 
 
+globals.css
