@@ -3,7 +3,7 @@ import notificationReducer from '../reducers/notificationReducer'; // Импор
 
 const store = configureStore({
   reducer: {
-    notification: notificationReducer, // Убедитесь, что это валидный редьюсер
+    notification: notificationReducer,
   },
 });
 

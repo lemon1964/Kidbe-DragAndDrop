@@ -83,16 +83,12 @@ npm run dev
   ```
 
 ==========================
+```sh
 import { useId } from "react";
   const safeId = useId();
         aria-describedby={`DndDescribedBy-${safeId}`}
 
 
-AnimalsSVG-2.json
-AnimalsSVG-2.tsx
-DraggableAnimal.tsx
-DragDrop.tsx
-Fruits.json
 
 git add .
 git commit -m "animals and fruits"
@@ -102,5 +98,8 @@ git push -u origin main
 rm -rf .git 
 git remote -v
 
+
+
+  ```
 
 
