@@ -1,0 +1,22 @@
+{
+    "task": "Рассели животных",
+    "description": "Поместите животных в правильные квартиры.",
+    "conditions": [
+      {
+        "description": "Пока не существует",
+        "condition": "Условие"
+      }
+    ],
+    "apartments": [
+      { "id": "red", "color": "Красный" },
+      { "id": "green", "color": "Зеленый" }
+    ],
+    "animals": [
+      { "id": "cat", "name": "Кот", "color": "red" },
+      { "id": "dog", "name": "Собака", "color": "green" },
+      { "id": "parrot", "name": "Попугай", "color": "red" },
+      { "id": "rabbit", "name": "Кролик", "color": "green" },
+      { "id": "fish", "name": "Рыбка", "color": "blue" }
+    ]
+  }
+  

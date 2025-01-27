@@ -126,13 +126,17 @@ const DraggableItem = ({ id, name, basket }: DraggableItemProps) => {
   });
 
   const uniqueId = useId();
+  const [isHovered, setIsHovered] = useState(false);
 
-  const style = transform
-    ? {
-        transform: `translate(${transform.x}px, ${transform.y}px)`,
-        zIndex: 9999, // Добавление большого значения zIndex
-      }
-    : undefined;
+  const style = {
+    ...transform && {
+      transform: `translate(${transform.x}px, ${transform.y}px)`,
+      zIndex: 9999, // Добавление большого значения zIndex
+    },
+    ...isHovered && !transform && {
+      transform: `scale(1.1)`, // Увеличение при наведении только если нет перемещения
+    },
+  };
 
   return (
     <motion.div
@@ -142,12 +146,14 @@ const DraggableItem = ({ id, name, basket }: DraggableItemProps) => {
       {...attributes}
       aria-describedby={`DndDescribedBy-${uniqueId}`} // Уникальный идентификатор
       className={`p-2 bg-blue-600 rounded-md shadow cursor-pointer text-black dark:text-white`}
-      whileHover={{ scale: 1.1 }} // Небольшое увеличение при наведении курсора
+      onMouseEnter={() => setIsHovered(true)} // Включаем эффект при наведении
+      onMouseLeave={() => setIsHovered(false)} // Убираем эффект при уходе курсора
       transition={{ type: "spring", stiffness: 800, damping: 100 }}
     >
       {name}
     </motion.div>
   );
 };
+
 
 export default DragDropGame;

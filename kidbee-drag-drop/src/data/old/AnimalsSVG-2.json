@@ -1,0 +1,19 @@
+
+
+{
+  "task": "Рассели животных",
+  "apartments": [
+    { "id": 1, "name": "Теремок", "color": "red", "image": "/image/red-house.png" },
+    { "id": 2, "name": "Пеппи", "color": "green", "image": "/image/green-house.png" },
+    { "id": 3, "name": "Коковани", "color": "blue", "image": "/image/blue-house.png" }
+  ],
+  "animals": [
+    { "id": 1, "name": "Кот", "color": "red", "image": "/image/cat.png" },
+    { "id": 2, "name": "Собака", "color": "green", "image": "/image/dog.png" },
+    { "id": 3, "name": "Попугай", "color": "red", "image": "/image/parrot.png" },
+    { "id": 4, "name": "Кролик", "color": "green", "image": "/image/rabbit.png" },
+    { "id": 5, "name": "Рыбка", "color": "blue", "image": "/image/fish.png" }
+  ],
+  "backgroundImage": "/image/background.jpg"
+}
+

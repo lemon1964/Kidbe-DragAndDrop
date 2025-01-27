@@ -1,0 +1,19 @@
+{
+    "task": "Рассели животных",
+    "description": "Поместите животных в правильные квартиры.",
+    "conditions": [
+      {
+        "animal": "Попугай",
+        "condition": "Красный"
+      }
+    ],
+    "apartments": [
+      { "id": "red", "color": "Красный" },
+      { "id": "yellow", "color": "Желтый" }
+    ],
+    "animals": [
+      { "id": "parrot", "name": "Попугай", "color": "Желтый" },
+      { "id": "dog", "name": "Собака", "color": "Синий" }
+    ]
+  }
+  

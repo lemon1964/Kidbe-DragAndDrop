@@ -1,0 +1,19 @@
+{
+    "task": "Положи в корзины",
+    "containers": [
+      { "id": 1, "name": "Овощи", "condition": "green", "image": "/image/basket.png" },
+      { "id": 2, "name": "Фрукты", "condition": "yellow", "image": "/image/basket.png" },
+      { "id": 3, "name": "Ягоды", "condition": "red", "image": "/image/basket.png" }
+    ],
+    "items": [
+      { "id": 1, "name": "Морковь", "condition": "green", "image": "/image/carrot.png" },
+      { "id": 2, "name": "Яблоко", "condition": "yellow", "image": "/image/apple.png" },
+      { "id": 3, "name": "Клубника", "condition": "red", "image": "/image/strawberry.png" },
+      { "id": 4, "name": "Банан", "condition": "yellow", "image": "/image/banana.png" },
+      { "id": 5, "name": "Помидор", "condition": "green", "image": "/image/tomato.png" },
+      { "id": 6, "name": "Малина", "condition": "red", "image": "/image/raspberry.png" },
+      { "id": 7, "name": "Груша", "condition": "yellow", "image": "/image/pear.png" }
+    ],
+    "backgroundImage": "/image/kitchen-background.jpg"
+  }
+  

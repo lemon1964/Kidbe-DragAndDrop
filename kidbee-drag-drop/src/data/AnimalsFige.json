@@ -1,0 +1,16 @@
+{
+  "task": "Рассели животных",
+  "containers": [
+    { "id": 1, "name": "Теремок", "condition": "red", "image": "/image/red-house.png" },
+    { "id": 2, "name": "Пеппи", "condition": "green", "image": "/image/green-house.png" },
+    { "id": 3, "name": "Коковани", "condition": "blue", "image": "/image/blue-house.png" }
+  ],
+  "items": [
+    { "id": 1, "name": "Кот", "condition": "red", "image": "/image/cat.png" },
+    { "id": 2, "name": "Собака", "condition": "green", "image": "/image/dog.png" },
+    { "id": 3, "name": "Попугай", "condition": "red", "image": "/image/parrot.png" },
+    { "id": 4, "name": "Кролик", "condition": "green", "image": "/image/rabbit.png" },
+    { "id": 5, "name": "Рыбка", "condition": "blue", "image": "/image/fish.png" }
+  ],
+  "backgroundImage": "/image/background2.jpg"
+}

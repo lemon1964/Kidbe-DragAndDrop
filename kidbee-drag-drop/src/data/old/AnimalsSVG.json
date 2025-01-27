@@ -1,0 +1,36 @@
+{
+    "task": "Рассели животных",
+    "description": "Поместите животных в правильные дома.",
+    "field": {
+      "width": 800,
+      "height": 600,
+      "x": 0,
+      "y": 0,
+      "scale": 1
+    },
+    "apartments": {
+      "container": {
+        "x": 100,
+        "y": 30,
+        "scale": 1.5,
+        "width": 600,
+        "height": 250
+      },
+      "items": [
+        { "id": "red", "color": "Красный", "image": "/image/red-house.png", "width": 150, "height": 200 },
+        { "id": "green", "color": "Зеленый", "image": "/image/green-house.png", "width": 150, "height": 200 }
+      ]
+    },
+    "animals": {
+      "scale": 0.8,
+      "placement": "random",
+      "items": [
+        { "id": "cat", "name": "Кот", "color": "red", "image": "/image/cat.png", "width": 100, "height": 100 },
+        { "id": "dog", "name": "Собака", "color": "green", "image": "/image/dog.png", "width": 100, "height": 100 },
+        { "id": "parrot", "name": "Попугай", "color": "red", "image": "/image/parrot.png", "width": 120, "height": 120 },
+        { "id": "rabbit", "name": "Кролик", "color": "green", "image": "/image/rabbit.png", "width": 100, "height": 100 },
+        { "id": "fish", "name": "Рыбка", "color": "blue", "image": "/image/fish.png", "width": 100, "height": 100 }
+      ]
+    }
+  }
+  
