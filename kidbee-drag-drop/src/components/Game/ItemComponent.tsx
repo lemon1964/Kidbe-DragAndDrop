@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDrag } from "react-dnd";
-import { Item } from "../types/drag-drop";
+import { Item } from "../../types/drag-drop";
 
 const ItemComponent: React.FC<{ item: Item }> = ({ item }) => {
   const [{ isDragging }, drag] = useDrag({

@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import { useDrop } from "react-dnd";
-import { Item } from "../types/drag-drop";
+import { Item } from "../../types/drag-drop";
 
 const rainbowColors = ["#FF0000", "#FFFF00", "#00FF00", "#0000FF", "#FFA500", "#00FFFF", "#800080"];
 
@@ -81,48 +81,5 @@ const Container: React.FC<ContainerProps> = ({
   
 
 };  
-
-  // без мобильной адаптации
-//   return (
-//     <div
-//       ref={dropRef}
-//       className={`relative flex flex-col items-center p-4 rounded-lg shadow-md transition-all duration-300 ${
-//         isOver ? "bg-opacity-80" : ""
-//       }`}
-//       style={{
-//         backgroundColor,
-//       }}
-//     >
-//       <h2
-//         className="text-xl md:text-lg sm:text-base font-bold text-white mb-4 p-2 rounded-lg bg-opacity-90 text-center"
-//         style={{ backgroundColor: "#00000090" }}
-//       >
-//         {name}
-//       </h2>
-//       <img
-//         src={image}
-//         alt={`Дом ${condition}`}
-//         className="w-full h-40 sm:h-32 object-cover rounded-md border-2 border-white"
-//       />
-//       <div
-//         className="absolute bottom-4 left-4 flex gap-2 sm:gap-1"
-//         style={{
-//           width: "clamp(60px, 15vw, 100px)", // Пропорциональное изменение ширины
-//         }}
-//       >
-//         {items.map(item => (
-//           <img
-//             key={item.id}
-//             src={item.image}
-//             alt={item.name}
-//             width="30"
-//             height="30"
-//             className="w-8 h-8 sm:w-6 sm:h-6 rounded-full border-2 border-white"
-//           />
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
 
 export default Container;

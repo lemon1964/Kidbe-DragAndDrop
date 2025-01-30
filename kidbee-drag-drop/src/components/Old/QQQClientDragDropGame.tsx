@@ -10,7 +10,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 
 // import taskData from "@/data/Fruits.json";
 import taskData from "@/data/AnimalsFige.json";
-import DragDropAnimalsWithGraphics from "../DragDrop";
+import DragDropAnimalsWithGraphics from "../Game/DragDrop";
 
 const ClientDragDropGame = () => {
   return (

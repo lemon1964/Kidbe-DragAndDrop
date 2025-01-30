@@ -22,26 +22,3 @@ export interface TaskData {
   task: string;
 }
 
-// src/types/drag-drop.d.ts
-
-// export interface Animal {
-//   id: number;
-//   name: string;
-//   color: string;
-//   image: string;
-// }
-
-// export interface Apartment {
-//   id: number;
-//   name: string;
-//   color: string;
-//   image: string;
-//   animals: Animal[];
-// }
-
-// export interface TaskData {
-//   apartments: Apartment[];
-//   animals: Animal[];
-//   backgroundImage: string;
-//   task: string;
-// }

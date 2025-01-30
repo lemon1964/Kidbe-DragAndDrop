@@ -1,6 +1,6 @@
 import React from "react";
 import ItemComponent from "./ItemComponent";
-import { Item } from "../types/drag-drop";
+import { Item } from "../../types/drag-drop";
 
 
 const ItemList: React.FC<{ items: Item[] }> = ({ items }) => (
