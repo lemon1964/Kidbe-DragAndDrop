@@ -70,7 +70,10 @@ npx tailwindcss init -p
 npm i framer-motion
 ```
 
-### Пишем коды
+### Пишем коды, читаем
+- Drag-Drop-Библиотеки.md
+- Адаптация_к_мобильным_устройствам.md
+- Redux-Toolkit.md
 
 ### Полезные команды
 ```sh
