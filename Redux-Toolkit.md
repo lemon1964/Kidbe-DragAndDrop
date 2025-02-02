@@ -59,3 +59,7 @@
 
 Данный подход можно масштабировать и применять в других частях проекта KidBee при необходимости.
 
+
+## Заключение
+- [Хельсинки - Flux-архитектура](https://fullstackopen.com/en/part6/flux_architecture_and_redux)
+- [Хельсинки - Redux Toolkit](https://fullstackopen.com/en/part6/many_reducers#redux-toolkit)
